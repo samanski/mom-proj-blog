@@ -43,6 +43,7 @@ h1 span {
     background-color: #aaaaaa;
     transition: all 0.3s ease 0s;
     cursor: pointer;
+    display: block;
 }
 
 .button-inner {
@@ -225,12 +226,18 @@ h1 span {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 0 10px 15px;
+    display: block;
 }
 
 .post .blurb {
     font-size: 16px;
     line-height: 16px;
     margin: 0 15px 10px 15px;
+    display: block;
+}
+
+.post .blurb p {
+    margin: 0;
 }
 
 .post .more {
@@ -402,4 +409,243 @@ h1 span {
 
 .footer-btm a {
     color: #ffffff;
+}
+
+
+
+/*********************/
+/*      TABLET      */
+/*******************/
+@media screen and (max-width: 1024px) {
+    .wrapper, 
+    .nav,
+    .header img {
+        width: 768px;
+    }
+
+    h1 {
+        font-size: 27px;
+        line-height: 27px;
+    }
+
+    h1 span {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .header .button-outer {
+        width: 150px;
+        height: 34px;
+        margin: 18px 98.25px;
+    }
+
+    .header .button-inner {
+        width: 146px;
+        height: 30px;
+    }
+
+    .header .button-text {
+        font-size: 27px;
+        line-height: 27px;
+        padding: 0;
+    }
+
+    .content {
+        margin: 12px 97.5px 0 97.5px;
+    }
+
+    .post-img {
+        width: 573px;
+    }
+
+    .post .blurb-box {
+        width: 573px;
+        height: 150px;
+        top: 225px;
+    }
+
+    .post .bookmark {
+        top: 10px;
+    }
+
+    .post .title h2 {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 10px 0 5px 10px;
+    }
+
+    .post .blurb {
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0 10px 10px 10px;
+        height: 57px;
+        width: 533px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .post .date {
+        margin: 0 0 10px 10px;
+    }
+
+    .post .more {
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0 10px;
+    }
+
+    .post .arrow img {
+        width: 14px;
+    }
+
+    #share {
+        margin: 0 0 0 30px;
+    }
+}
+
+
+
+/*********************/
+/*      MOBILE      */
+/*******************/
+@media screen and (max-width: 768px) {
+    .wrapper,
+    .nav,
+    .header img {
+        width: 320px;
+    }
+
+    .logo {
+        margin: 10px 0;
+        width: 30px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .nav-links {
+        margin: 26px 0;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .nav-links div {
+        margin: 0 15px 0 0;
+    }
+
+    .header-content {
+        bottom: 30px;
+        right: -5px;
+    }
+
+    h1 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+        h1 span {
+            font-size: 18px;
+            line-height: 18px;
+        }
+
+    .header .button-outer {
+        display: none;
+    }
+
+    .content {
+        margin: 12px 41px 0 41px;
+    }
+
+    .post-img {
+        width: 240px;
+    }
+
+    .post .blurb-box {
+        width: 240px;
+        height: 83px;
+        top: 75px;
+    }
+
+    .post .bookmark {
+        top: 10px;
+    }
+
+    .post .title h2 {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 10px 0 15px 10px;
+    }
+
+    .post .blurb {
+        display: none;
+    }
+
+    .post .date {
+        display: none;
+    }
+
+    .post .more {
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0 10px;
+    }
+
+    .post .arrow img {
+        width: 14px;
+    }
+
+    #share {
+        margin: 0 0 0 -20px;
+    }
+
+    .entry .title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .entry .tag {
+        margin: 0 10px 10px 0;
+    }
+
+    .footer {
+        padding: 20px;
+        height: 35px;
+    }
+    .logo-footer img {
+        width: 35px;
+    }
+
+    .footer .button-outer {
+        display: none;
+    }
+
+    .footer .social-icons {
+        margin: 0;
+    }
+
+    .footer .social-icons div {
+        margin: 0 15px 0 0;
+    }
+
+    .footer-btm {
+        height: 43px;
+    }
+
+    .footer-btm .copyright {
+        margin: 0;
+        padding: 7px 0 0 0;
+        float: none;
+        width: 320px;
+        text-align: center;
+    }
+
+    .footer-btm .terms-policy {
+        margin: 0;
+        padding: 5px 0 7px 0;
+        float: none;
+        width: 320px;
+        text-align: center;
+    }
 }
