@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mom Project Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var elementPosition = $('#share').css('top', '100px').offset();
+
+            $(window).scroll(function () {
+                $('#share').css('position', ($(window).scrollTop() > elementPosition.top) ? 'fixed' : 'absolute');
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="nav-container">
+        <div class="nav">
+            <div class="logo">
+                <a href="https://www.themomproject.com" target="_blank">
+                    <img src="images/logo.png" alt="The Mom Project" />
+                </a>
+            </div>
+            <div class="nav-links">
+                <div>
+                    <a href="posts-all.html">Most Recent</a>
+                </div>
+                <div>
+                    <a href="#">Popular</a>
+                </div>
+                <div>
+                    <a href="#">Login</a>
+                </div>
+                <div>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="header">
+            <img src="images/header.jpg" alt="The Mom Project - Blog Website" />
+            <div class="header-content">
+                <h1>The Mom Project</h1>
+                <h1><span>Blog Website</span></h1>
+                <div class="button-outer">
+                    <div class="button-inner">
+                        <div class="button-text">Follow Us</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="share-container">
+            <div id="share">
+                <div class="share-icon">
+                    <img src="images/heart-share.png" alt="heart" />
+                </div>
+                <div class="share-icon">
+                    <img src="images/bookmark-share.png" alt="bookmark" />
+                </div>
+                <div class="share-text">
+                    Share
+                </div>
+                <div class="share-icon">
+                    <a href="#"><img src="images/twitter-share.png" alt="twitter" /></a>
+                </div>
+                <div class="share-icon">
+                    <a href="#"><img src="images/facebook-share.png" alt="facebook" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="entry">
+                <div class="title">
+                    Title for Blog Entry #4
+                </div>
+                <div class="date">
+                    March 20, 2017
+                </div>
+
+                <img src="images/post-img-4.jpg" alt="Post #4" />
+
+                <div class="blog-text">
+                    <p>In nunc sapien, luctus libero amet, at tortor justo massa imperdiet sit. Enim donec, velit pellentesque tortor dictum pellentesque id, senectus mi eleifend at. Integer diam cursus, maecenas in hac maecenas, magna donec diam vivamus, tempus arcu justo id in non, arcu aliquam est in elementum nec dignissim. Habitant tempor elementum pede maecenas mauris faucibus. Semper duis, cras ac vitae dolor vestibulum neque ligula, egestas ut sed cras nunc ultricies neque.</p>
+
+                    <p>Tortor rhoncus. Erat anim tincidunt. Eros mauris curabitur officiis varius platea, leo maecenas, vel volutpat etiam, mi curabitur in placerat dis sed felis, tellus quia commodo amet ipsum massa justo. Pede maecenas massa lorem aliquam, wisi pellentesque, blandit luctus augue eget varius, tincidunt quam pellentesque felis scelerisque. Maecenas risus scelerisque urna imperdiet hac praesent, id torquent nonummy sed justo. Fusce nulla natoque vitae, placerat condimentum nullam praesent ut lacinia, a ligula nulla elit, tellus nulla eget fusce nunc vel. Nam tempus ultricies maecenas curabitur etiam molestie, sapien blandit, mauris felis nullam a ut a fugiat, euismod senectus blandit viverra nulla varius, vehicula aliquam nulla mauris. Ut vel ut ac accumsan integer leo, dui tempor mauris viverra, quam libero tempor leo, lacus fringilla fermentum sapien ligula. Diam metus penatibus malesuada nisl dui. Augue mauris donec mattis non duis. Neque mi lorem nulla, ullamcorper felis magna nec vulputate tincidunt. Et curabitur in at, etiam imperdiet gravida pretium, nunc consequat mauris nibh nostra felis congue, pede metus a mi magna montes ut.</p>
+
+                    <p>Curabitur similique fermentum urna libero aliquam, augue elit praesent metus montes amet, semper lacus, quam lectus leo ac donec pede erat, id suspendisse risus lacus ac. Erat faucibus suscipit, quis pede, convallis non necessitatibus dignissim turpis non, non turpis mauris a erat. Sed turpis nulla vulputate. Sed lectus nemo arcu duis magnis pharetra, mauris pretium ipsum at augue, pretium tellus, gravida curae neque felis. Duis sed, integer accumsan donec viverra nonummy, aliquam curabitur quis. Et sem nullam nullam donec cursus ut, ac velit molestie, sit ullamcorper maecenas a, porttitor nam ac.</p>
+
+                    <p>Duis adipiscing etiam erat metus, ut erat scelerisque mi malesuada ea orci. Metus praesent. Platea consequat faucibus mauris, vel massa et. Maecenas nulla felis volutpat ultrices sollicitudin eu, fames est odio sagittis non commodo. Vel porta nam duis ut lacus. Suspendisse dolor pede sociosqu ac tincidunt, et luctus pulvinar odio, arcu fringilla elementum varius eros, at viverra orci proin vestibulum. Nec massa pretium, leo bibendum sed in accumsan sagittis nullam, quis luctus urna. Faucibus dolor non, ante nulla sollicitudin.</p>
+                </div>
+
+                <div class="seo-tags">
+                    <div class="tag">Tag Item #1</div>
+                    <div class="tag">Tag Item #2</div>
+                    <div class="tag">Tag Item #3</div>
+                    <div class="tag">The Last Tag Item</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            <div class="logo-footer">
+                <a href="https://www.themomproject.com" target="_blank">
+                    <img src="images/logo-footer.png" alt="The Mom Project" />
+                </a>
+            </div>
+
+            <div class="social-footer">
+                <div class="button-outer">
+                    <div class="button-inner">
+                        <div class="button-text">Follow Us</div>
+                    </div>
+                </div>
+
+                <div class="social-icons">
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/facebook.png" alt="Facebook" />
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/instagram.png" alt="Instagram" />
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/linkedin.png" alt="LinkedIn" />
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="#">
+                            <img src="images/twitter.png" alt="Twitter" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-btm">
+            <div class="copyright">
+                2017 &copy; Copyright The Mom Project. All Rights Reserved.
+            </div>
+
+            <div class="terms-policy">
+                <div class="terms">
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="policy">
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

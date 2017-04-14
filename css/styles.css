@@ -1,0 +1,405 @@
+﻿body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+h1 span {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bolder;
+    color: #ffffff;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/*********************/
+/*      BUTTON      */
+/*******************/
+.button-outer {
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #aaaaaa;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.button-inner {
+    padding: 2px;
+    border-radius: 5px;
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 45%, rgba(224,224,224,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(45%, rgba(240,240,240,1)), color-stop(100%, rgba(224,224,224,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 45%, rgba(224,224,224,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 45%, rgba(224,224,224,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 45%, rgba(224,224,224,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 45%, rgba(224,224,224,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=0 );
+}
+
+.button-text {
+    text-align: center;
+    margin: 0;
+    padding: 5px 0 1px 0;
+}
+
+.button-outer:hover {
+    background-color: #000000;
+}
+
+.button-outer:hover .button-inner {
+    color: #ffffff;
+    background: rgba(186,101,108,1);
+    background: -moz-linear-gradient(top, rgba(186,101,108,1) 0%, rgba(156,28,37,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(186,101,108,1)), color-stop(100%, rgba(156,28,37,1)));
+    background: -webkit-linear-gradient(top, rgba(186,101,108,1) 0%, rgba(156,28,37,1) 100%);
+    background: -o-linear-gradient(top, rgba(186,101,108,1) 0%, rgba(156,28,37,1) 100%);
+    background: -ms-linear-gradient(top, rgba(186,101,108,1) 0%, rgba(156,28,37,1) 100%);
+    background: linear-gradient(to bottom, rgba(186,101,108,1) 0%, rgba(156,28,37,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba656c', endColorstr='#9c1c25', GradientType=0 );
+}
+
+
+/*************************/
+/*      NAVIGATION      */
+/***********************/
+.nav-container {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #9c1b24;
+    -webkit-box-shadow: 0px 3px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 3px -1px rgba(0,0,0,0.75);
+    z-index: 2;
+}
+
+.nav {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 50px;
+    margin: 10px 0 10px 30px;
+    float: left;
+}
+
+.nav-links {
+    margin: 26px 20px 20px 20px;
+    float: right;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.nav-links div {
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.nav-links div:last-child {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+}
+
+.nav-links a:hover {
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/********************/
+/*      HEADER     */
+/******************/
+.header {
+    position: relative;
+}
+
+.header-content {
+    margin: 0 12px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.header .button-outer {
+    width: 200px;
+    height: 46px;
+    margin: 25px 131px;
+}
+
+.header .button-inner {
+    width: 196px;
+    height: 42px;
+}
+
+.header .button-text {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+
+/*********************/
+/*      CONTENT     */
+/*******************/
+.content {
+    margin: 12px 130px 0 130px;
+    position: relative;
+}
+
+
+/******************/
+/*      POSTS    */
+/****************/
+.post {
+    position: relative;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.post a {
+    color: #ffffff;
+}
+
+.post .heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.post .blurb-box {
+    width: 764px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    background-color: #000000;
+    opacity: 0.85;
+}
+
+.post .bookmark {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.post .title h2 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    margin: 15px 0 5px 15px;
+}
+
+.post .date {
+    font-family: 'Muli', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 10px 15px;
+}
+
+.post .blurb {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 15px 10px 15px;
+}
+
+.post .more {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 10px 0 15px;
+}
+
+.post .arrow {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/******************/
+/*      ENTRY    */
+/****************/
+.entry .title {
+    font-family: 'Muli', sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: bold;
+    margin: 0 0 7px 0;
+}
+
+.entry .date {
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+.entry img {
+    margin: 0 0 20px 0;
+}
+
+.entry .blog-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.entry .seo-tags {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 20px 0;
+}
+
+.entry .tag {
+    display: inline-block;
+    padding: 8px;
+    margin: 0 10px 0 0;
+    background-color: #cccccc;
+}
+
+
+/****************************/
+/*      ENTRY - SHARE      */
+/**************************/
+.share-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#share {
+    width: 50px;
+    position: absolute;
+    top: 100px;
+    margin: 0 0 0 50px;
+}
+
+.share-icon {
+    margin: 10px 0 20px 10px;
+    cursor: pointer;
+}
+
+.share-text {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+
+
+
+
+/*********************/
+/*      FOOTER      */
+/*******************/
+.footer {
+    padding: 40px 80px;
+    height: 75px;
+    background-color: #9c1b24;
+}
+
+.footer .logo-footer {
+    float: left;
+}
+
+.footer .social-footer {
+    float: right;
+}
+
+.footer .button-outer {
+    width: 116px;
+    height: 31px;
+    margin: 20px 95px 20px 15px;
+    display: inline-block;
+}
+
+.footer .button-inner {
+    width: 112px;
+    height: 27px;
+}
+
+.footer .button-text {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.footer .social-icons {
+    margin: 23px 0 22px 0;
+    display: inline-block;
+}
+
+.footer .social-icons div {
+    margin: 0 30px 0 0;
+    display: inline-block;
+}
+
+.footer .social-icons div:last-child {
+    margin: 0;
+}
+
+
+
+/****************************/
+/*      FOOTER BOTTOM      */
+/**************************/
+.footer-btm {
+    height: 25px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: #710a11;
+}
+
+.footer-btm .copyright {
+    margin: 7px 0 6px 12px;
+    float: left;
+}
+
+.footer-btm .terms-policy {
+    margin: 7px 12px 6px 0;
+    float: right;
+}
+
+.footer-btm .terms-policy div {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
+.footer-btm a {
+    color: #ffffff;
+}
