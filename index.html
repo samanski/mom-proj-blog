@@ -8,13 +8,22 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $(function () {
+            $('#menu-toggle').click(function () {
+                $(this).toggleClass('expanded').siblings('div').slideToggle();
+            });
+        });
+    </script>
 </head>
 <body>
 
     <div class="nav-container">
         <div class="nav">
             <div class="logo">
-                <a href="https://www.themomproject.com" target="_blank">
+                <a href="index.html">
                     <img src="images/logo.png" alt="The Mom Project" />
                 </a>
             </div>
@@ -38,7 +47,6 @@
     <div class="wrapper">
 
         <div class="header">
-            <img src="images/header.jpg" alt="The Mom Project - Blog Website" />
             <div class="header-content">
                 <h1>The Mom Project</h1>
                 <h1><span>Blog Website</span></h1>
@@ -50,36 +58,111 @@
             </div>
         </div>
 
-        <div class="content">
-            <div class="post">
-                <img src="images/post-img-1.jpg" alt="Post #1" class="post-img" />
-                <div class="heart">
-                    <img src="images/heart.png" alt="heart" />
-                </div>
+        <div class="content features">
+            <div class="main-feature">
+                <img src="images/home-post-1.jpg" alt="Featured Post #1" />
+
                 <div class="blurb-box">
-                    <div class="bookmark">
-                        <img src="images/bookmark.png" alt="bookmark" />
-                    </div>
                     <div class="title">
-                        <a href="#"><h2>Title for Blog Entry #1</h2></a>
+                        <a href="post-1.html">Feature Blog #1</a>
                     </div>
-                    <div class="date">April 10, 2017</div>
-                    <div class="blurb">Lorem ipsum dolor sit amet, dolor vel amet ut lacus, nulla sed, suscipit aenean id morbi, cras curabitur metus orci at integer vulputate, sit ultrices feugiat. In sapien ultrices, ullamcorper aenean, ante integer tincidunt, donec ut elit magna. Nunc mauris accumsan integer wisi, aenean porta viverra sodales. Eget mauris mauris cras vestibulum, eget phasellus, lacinia viverra, lacinia sollicitudin mus dui quis libero sit, wisi quis nibh.</div>
+                    <div class="blurb">Lorem ipsum dolor sit amet, dolor vel amet ut lacus, nulla sed, suscipit aenean id morbi, cras curabitur metus orci at integer vulputate, sit ultrices feugiat. In sapien ultrices, ullamcorper aenean, ante integer tincidunt, donec ut elit magna. Nunc mauris accumsan integer wisi, aenean porta viverra sodales. Eget mauris mauris cras vestibulum.</div>
                     <div class="more">
-                        <a href="#">Read More</a>
+                        <a href="post-1.html">Read More</a>
                     </div>
                     <div class="arrow">
-                        <a href="#">
-                            <img src="images/arrow-btn.png" alt="Read More" />
+                        <a href="post-1.html">
+                            <img src="images/arrow-btn-lg.png" alt="Read More" />
                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-features">
+                <div class="feature-2">
+                    <img src="images/home-post-2.jpg" alt="Featured Post #2" />
+
+                    <div class="blurb-box">
+                        <div class="title">
+                            <a href="post-3.html">Feature Blog #2</a>
+                        </div>
+                        <div class="blurb">Nunc blandit laoreet mauris urna, vel ullamcorper pede tincidunt ultricies orci magna.</div>
+                        <div class="more">
+                            <a href="post-3.html">Read More</a>
+                        </div>
+                        <div class="arrow">
+                            <a href="post-3.html">
+                                <img src="images/arrow-btn.png" alt="Read More" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-3">
+                    <img src="images/home-post-3.jpg" alt="Featured Post #3" />
+
+                    <div class="blurb-box">
+                        <div class="title">
+                            <a href="post-2.html">Feature Blog #3</a>
+                        </div>
+                        <div class="blurb">Integer volutpat. Gravida id mauris nec amet pellentesque, ipsum consectetuer ante quisque odio.</div>
+                        <div class="more">
+                            <a href="post-2.html">Read More</a>
+                        </div>
+                        <div class="arrow">
+                            <a href="post-2.html">
+                                <img src="images/arrow-btn.png" alt="Read More" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-features">
+                <div class="feature-4">
+                    <img src="images/home-post-4.jpg" alt="Featured Post #4" />
+
+                    <div class="blurb-box">
+                        <div class="title">
+                            <a href="post-4.html">Feature Blog #4</a>
+                        </div>
+                        <div class="blurb">Mattis amet in metus, imperdiet non lacinia ultricies nonummy magna tortor, quasi cras.</div>
+                        <div class="more">
+                            <a href="post-4.html">Read More</a>
+                        </div>
+                        <div class="arrow">
+                            <a href="post-4.html">
+                                <img src="images/arrow-btn.png" alt="Read More" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-5">
+                    <img src="images/home-post-5.jpg" alt="Featured Post #5" />
+
+                    <div class="blurb-box">
+                        <div class="title">
+                            <a href="post-6.html">Feature Blog #5</a>
+                        </div>
+                        <div class="blurb">Wisi at justo iaculis vel phasellus, imperdiet placerat ultrices. A massa, pulvinar quis leo.</div>
+                        <div class="more">
+                            <a href="post-6.html">Read More</a>
+                        </div>
+                        <div class="arrow">
+                            <a href="post-6.html">
+                                <img src="images/arrow-btn.png" alt="Read More" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+
         <div class="footer">
             <div class="logo-footer">
-                <a href="https://www.themomproject.com" target="_blank">
+                <a href="index.html">
                     <img src="images/logo-footer.png" alt="The Mom Project" />
                 </a>
             </div>

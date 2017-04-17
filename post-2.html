@@ -9,12 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script>
         $(function () {
-            var elementPosition = $('#share').css('top', '100px').offset();
-
-            $(window).scroll(function () {
-                $('#share').css('position', ($(window).scrollTop() > elementPosition.top) ? 'fixed' : 'absolute');
+            $('#menu-toggle').click(function () {
+                $(this).toggleClass('expanded').siblings('div').slideToggle();
             });
         });
     </script>
@@ -24,7 +23,7 @@
     <div class="nav-container">
         <div class="nav">
             <div class="logo">
-                <a href="https://www.themomproject.com" target="_blank">
+                <a href="index.html">
                     <img src="images/logo.png" alt="The Mom Project" />
                 </a>
             </div>
@@ -48,7 +47,6 @@
     <div class="wrapper">
 
         <div class="header">
-            <img src="images/header.jpg" alt="The Mom Project - Blog Website" />
             <div class="header-content">
                 <h1>The Mom Project</h1>
                 <h1><span>Blog Website</span></h1>
@@ -62,19 +60,19 @@
 
         <div class="share-container">
             <div id="share">
-                <div class="share-icon">
+                <div class="share-icon heart clicked">
                     <img src="images/heart-share.png" alt="heart" />
                 </div>
-                <div class="share-icon">
+                <div class="share-icon bookmark clicked">
                     <img src="images/bookmark-share.png" alt="bookmark" />
                 </div>
                 <div class="share-text">
                     Share
                 </div>
-                <div class="share-icon">
+                <div class="share-icon twitter">
                     <a href="#"><img src="images/twitter-share.png" alt="twitter" /></a>
                 </div>
-                <div class="share-icon">
+                <div class="share-icon facebook">
                     <a href="#"><img src="images/facebook-share.png" alt="facebook" /></a>
                 </div>
             </div>
@@ -114,7 +112,7 @@
 
         <div class="footer">
             <div class="logo-footer">
-                <a href="https://www.themomproject.com" target="_blank">
+                <a href="index.html">
                     <img src="images/logo-footer.png" alt="The Mom Project" />
                 </a>
             </div>

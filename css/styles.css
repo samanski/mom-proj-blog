@@ -27,6 +27,11 @@ h1 span {
     color: #ffffff;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
+
 .wrapper {
     width: 1024px;
     margin: 0 auto;
@@ -111,6 +116,7 @@ h1 span {
 }
 
 .nav-links {
+    display: block;
     margin: 26px 20px 20px 20px;
     float: right;
     font-size: 24px;
@@ -141,6 +147,8 @@ h1 span {
 /******************/
 .header {
     position: relative;
+    background-image: url('../images/header.jpg');
+    height: 500px;
 }
 
 .header-content {
@@ -176,6 +184,115 @@ h1 span {
 }
 
 
+/******************************/
+/*      FEATURED CONTENT     */
+/****************************/
+.content.features {
+    margin: 12px 12px 20px 12px;
+    color: #ffffff;
+}
+
+.content.features a {
+    color: #ffffff;
+}
+
+.main-feature {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.more-features {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 5px;
+    padding: 0;
+}
+
+.more-features .feature-3, .more-features .feature-5 {
+    margin: 10px 0 0 0;
+}
+
+.features .blurb-box {
+    position: absolute;
+    top: 0;
+    background-color: #000000;
+    opacity: 0.85;
+}
+
+.features .more {
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+
+.features .arrow {
+    display: inline-block;
+}
+
+.main-feature .blurb-box {
+    width: 450px;
+    height: 210px;
+    padding: 20px;
+    top: 350px;
+}
+
+.main-feature .title {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+}
+
+.main-feature .blurb {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0 0 10px 0;
+}
+
+.main-feature .more {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.more-features .blurb-box {
+    width: 225px;
+    height: 105px;
+    padding: 10px;
+}
+
+.more-features .feature-2 .blurb-box {
+    top: 150px;
+}
+.more-features .feature-3 .blurb-box,
+.more-features .feature-5 .blurb-box {
+    top: 480px;
+}
+.more-features .feature-4 .blurb-box {
+    top: 75px;
+}
+
+.more-features .title {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 7px 0;
+}
+
+.more-features .blurb {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 0 7px 0;
+}
+
+.more-features .more {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+
 /******************/
 /*      POSTS    */
 /****************/
@@ -190,10 +307,19 @@ h1 span {
 }
 
 .post .heart {
+    background-image: url('/images/heart.png');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 15px;
     right: 15px;
     cursor: pointer;
+}
+
+.post .heart.clicked {
+    background-image: url('/images/hearted.png');
+    background-repeat: no-repeat;
 }
 
 .post .blurb-box {
@@ -206,17 +332,26 @@ h1 span {
 }
 
 .post .bookmark {
+    background-image: url('/images/bookmark-lg.png');
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 50px;
     position: absolute;
     top: 15px;
     right: 15px;
     cursor: pointer;
 }
 
+.post .bookmark.clicked {
+        background-image: url('/images/bookmarked-lg.png');
+        background-repeat: no-repeat;
+    }
+
 .post .title h2 {
     font-size: 24px;
     line-height: 24px;
     font-weight: normal;
-    margin: 15px 0 5px 15px;
+    margin: 15px 80px 5px 15px;
 }
 
 .post .date {
@@ -313,13 +448,30 @@ h1 span {
 #share {
     width: 50px;
     position: absolute;
-    top: 100px;
+    top: 91px;
     margin: 0 0 0 50px;
 }
 
 .share-icon {
     margin: 10px 0 20px 10px;
     cursor: pointer;
+}
+
+.share-icon.heart {
+    background-image: url('/images/heart-share.png');
+    background-repeat: no-repeat;
+    margin: 0 0 20px 10px;
+}
+.share-icon.heart.clicked {
+    background-image: url('/images/hearted-share.png');
+}
+
+.share-icon.bookmark {
+    background-image: url('/images/bookmark-share.png');
+    background-repeat: no-repeat;
+}
+.share-icon.bookmark.clicked {
+    background-image: url('/images/bookmarked-share.png');
 }
 
 .share-text {
@@ -397,6 +549,10 @@ h1 span {
     float: left;
 }
 
+.footer-btm .copyright p {
+    margin: 0;
+}
+
 .footer-btm .terms-policy {
     margin: 7px 12px 6px 0;
     float: right;
@@ -417,9 +573,12 @@ h1 span {
 /*      TABLET      */
 /*******************/
 @media screen and (max-width: 1024px) {
-    .wrapper, 
-    .nav,
-    .header img {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .wrapper,
+    .nav {
         width: 768px;
     }
 
@@ -437,6 +596,12 @@ h1 span {
         width: 150px;
         height: 34px;
         margin: 18px 98.25px;
+    }
+
+    .header {
+        background-image: url('../images/header-tablet.jpg');
+        background-repeat: no-repeat;
+        height: 374px;
     }
 
     .header .button-inner {
@@ -480,9 +645,11 @@ h1 span {
         margin: 0 10px 10px 10px;
         height: 57px;
         width: 533px;
-        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
     }
 
     .post .date {
@@ -502,6 +669,10 @@ h1 span {
     #share {
         margin: 0 0 0 30px;
     }
+
+    .footer {
+        padding: 40px 30px;
+    }
 }
 
 
@@ -510,19 +681,21 @@ h1 span {
 /*      MOBILE      */
 /*******************/
 @media screen and (max-width: 768px) {
-    .wrapper,
-    .nav,
-    .header img {
+    .wrapper, .nav {
         width: 320px;
+    }
+
+    .nav-links {
+        display: none;
     }
 
     .logo {
         margin: 10px 0;
-        width: 30px;
+        width: 50px;
     }
 
     .logo img {
-        width: 30px;
+        width: 50px;
     }
 
     .nav-links {
@@ -535,47 +708,60 @@ h1 span {
         margin: 0 15px 0 0;
     }
 
+    .header {
+        background-image: url('../images/header-mobile.jpg');
+        height: 250px;
+    }
+
     .header-content {
-        bottom: 30px;
-        right: -5px;
+        bottom: 0;
+        right: 0;
+        margin: 0;
     }
 
     h1 {
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 20px;
+        line-height: 20px;
     }
 
-        h1 span {
-            font-size: 18px;
-            line-height: 18px;
-        }
+    h1 span {
+        font-size: 27px;
+        line-height: 27px;
+    }
 
     .header .button-outer {
-        display: none;
+        margin: 10px 40px;
     }
 
+
     .content {
-        margin: 12px 41px 0 41px;
+        margin: 10px 0 30px 0;
     }
 
     .post-img {
-        width: 240px;
+        width: 320px;
     }
 
     .post .blurb-box {
-        width: 240px;
-        height: 83px;
-        top: 75px;
+        width: 320px;
+        height: 86px;
+        top: 123px;
+    }
+
+    .post .heart {
+        top: 10px;
+        right: 10px;
     }
 
     .post .bookmark {
         top: 10px;
+        right: 10px;
     }
 
     .post .title h2 {
-        font-size: 18px;
-        line-height: 18px;
-        margin: 10px 0 15px 10px;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 10px 70px 6px 10px;
     }
 
     .post .blurb {
@@ -583,13 +769,15 @@ h1 span {
     }
 
     .post .date {
-        display: none;
+        font-size: 12px;
+        line-height: 12px;
+        margin: 0 70px 12px 10px;
     }
 
     .post .more {
-        font-size: 14px;
-        line-height: 14px;
-        margin: 0 10px;
+        font-size: 16px;
+        line-height: 16px;
+        margin: 0 0 10px 10px;
     }
 
     .post .arrow img {
@@ -597,12 +785,53 @@ h1 span {
     }
 
     #share {
-        margin: 0 0 0 -20px;
+        margin: 0;
+        width: 320px;
+        height: 50px;
+        top: 277px;
+        z-index: 5;
+        background-color: #ffffff;
+        opacity: 0.65;
+    }
+
+    #share .share-icon, #share .share-text {
+        display: inline-block;
+        position: absolute;
+    }
+
+    #share .share-icon.heart {
+        left: 14px;
+        top: 10px;
+    }
+
+    #share .share-icon.bookmark {
+        left: 74px;
+    }
+
+    #share .share-text {
+        top: 17px;
+        left: 134px;
+    }
+
+    #share .share-icon.twitter {
+        right: 74px;
+    }
+
+    #share .share-icon.facebook {
+        right: 14px;
     }
 
     .entry .title {
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 36px;
+        line-height: 36px; 
+    }
+
+    .entry .date {
+        margin: 0 0 15px 0;
+    }
+
+    .entry .img {
+        margin: 0 0 15px 0;
     }
 
     .entry .tag {
@@ -610,42 +839,123 @@ h1 span {
     }
 
     .footer {
-        padding: 20px;
-        height: 35px;
+        padding: 35px 10px;
+        height: 75px;
     }
+
     .logo-footer img {
-        width: 35px;
+        width: 75px;
     }
 
     .footer .button-outer {
-        display: none;
+        width: 116px;
+        height: 31px;
+        margin: 0 0 10px 30px;
+    }
+
+    .footer .button-inner {
+        width: 112px;
+        height: 27px;
+    }
+
+    .footer .button-text {
+        font-size: 20px;
+        line-height: 20px;
     }
 
     .footer .social-icons {
         margin: 0;
+        display: block;
     }
 
     .footer .social-icons div {
-        margin: 0 15px 0 0;
+        margin: 0 20px 0 0;
     }
 
     .footer-btm {
-        height: 43px;
+        width: 320px;
+        height: 72px;
+        font-size: 14px;
+        line-height: 16px;
     }
 
     .footer-btm .copyright {
         margin: 0;
-        padding: 7px 0 0 0;
+        padding: 8px 10px;
+        width: 320px;
+        text-align: center;
+    }
+
+    .footer-btm .copyright span {
+        display: block;
+    }
+
+    .footer-btm .terms-policy {
+        margin: 0;
+        padding: 0 0 8px 0;
         float: none;
         width: 320px;
         text-align: center;
     }
 
-    .footer-btm .terms-policy {
-        margin: 0;
-        padding: 5px 0 7px 0;
-        float: none;
-        width: 320px;
-        text-align: center;
+    /*********************/
+    /*  HAMBURGER MENU  */
+    /*******************/
+    .hamburger-menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 3;
+        color: #000000;
+        text-transform: uppercase;
     }
+
+        .hamburger-menu div {
+            display: none;
+        }
+
+        .hamburger-menu button {
+            position: absolute;
+            top: 10px;
+            right: 5%;
+            border: 0;
+            text-indent: 200%;
+            overflow: hidden;
+            background: url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+            background-size: 80%;
+            width: 30px;
+            height: 30px;
+            outline: none;
+            -webkit-transition: all 400ms ease;
+            transition: all 400ms ease;
+            cursor: pointer;
+        }
+
+            .hamburger-menu button.expanded {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+                background-color: transparent;
+                border: 0;
+            }
+
+        .hamburger-menu a {
+            display: block;
+            background: #9c1b24;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #710a11;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+            .hamburger-menu a:hover,
+            .hamburger-menu a:active,
+            .hamburger-menu a:focus {
+                color: #000000;
+                font-weight: bold;
+            }
 }

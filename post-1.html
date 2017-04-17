@@ -9,25 +9,35 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script>
         $(function () {
-            var elementPosition = $('#share').css('top', '100px').offset();
-
-            $(window).scroll(function () {
-                $('#share').css('position', ($(window).scrollTop() > elementPosition.top) ? 'fixed' : 'absolute');
+            $('#menu-toggle').click(function () {
+                $(this).toggleClass('expanded').siblings('div').slideToggle();
             });
         });
     </script>
 </head>
 <body>
 
+    <nav class="hamburger-menu">
+        <button id="menu-toggle">Toggle</button>
+        <div>
+            <a href="posts-all.html">Most Recent</a>
+            <a href="#">Popular</a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </nav>
+
     <div class="nav-container">
         <div class="nav">
             <div class="logo">
-                <a href="https://www.themomproject.com" target="_blank">
+                <a href="index.html">
                     <img src="images/logo.png" alt="The Mom Project" />
                 </a>
             </div>
+
             <div class="nav-links">
                 <div>
                     <a href="posts-all.html">Most Recent</a>
@@ -48,7 +58,6 @@
     <div class="wrapper">
 
         <div class="header">
-            <img src="images/header.jpg" alt="The Mom Project - Blog Website" />
             <div class="header-content">
                 <h1>The Mom Project</h1>
                 <h1><span>Blog Website</span></h1>
@@ -62,19 +71,19 @@
 
         <div class="share-container">
             <div id="share">
-                <div class="share-icon">
+                <div class="share-icon heart clicked">
                     <img src="images/heart-share.png" alt="heart" />
                 </div>
-                <div class="share-icon">
+                <div class="share-icon bookmark">
                     <img src="images/bookmark-share.png" alt="bookmark" />
                 </div>
                 <div class="share-text">
                     Share
                 </div>
-                <div class="share-icon">
+                <div class="share-icon twitter">
                     <a href="#"><img src="images/twitter-share.png" alt="twitter" /></a>
                 </div>
-                <div class="share-icon">
+                <div class="share-icon facebook">
                     <a href="#"><img src="images/facebook-share.png" alt="facebook" /></a>
                 </div>
             </div>
@@ -90,7 +99,7 @@
                     April 10, 2017
                 </div>
 
-                <img src="images/post-img-1.jpg" alt="Post #1" class="post-img" />
+                <img id="postImg" src="images/post-img-1.jpg" alt="Post #1" class="post-img" />
 
                 <div class="blog-text">
                     <p>In nunc sapien, luctus libero amet, at tortor justo massa imperdiet sit. Enim donec, velit pellentesque tortor dictum pellentesque id, senectus mi eleifend at. Integer diam cursus, maecenas in hac maecenas, magna donec diam vivamus, tempus arcu justo id in non, arcu aliquam est in elementum nec dignissim. Habitant tempor elementum pede maecenas mauris faucibus. Semper duis, cras ac vitae dolor vestibulum neque ligula, egestas ut sed cras nunc ultricies neque.</p>
@@ -114,7 +123,7 @@
 
         <div class="footer">
             <div class="logo-footer">
-                <a href="https://www.themomproject.com" target="_blank">
+                <a href="index.html">
                     <img src="images/logo-footer.png" alt="The Mom Project" />
                 </a>
             </div>
@@ -153,7 +162,7 @@
 
         <div class="footer-btm">
             <div class="copyright">
-                2017 &copy; Copyright The Mom Project. All Rights Reserved.
+                <p>2017 &copy; Copyright The Mom Project. <span>All Rights Reserved.</span></p>
             </div>
 
             <div class="terms-policy">

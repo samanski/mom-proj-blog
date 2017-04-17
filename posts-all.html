@@ -8,13 +8,32 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        $(function () {
+            $('#menu-toggle').click(function () {
+                $(this).toggleClass('expanded').siblings('div').slideToggle();
+            });
+        });
+    </script>
 </head>
 <body>
+
+    <nav class="hamburger-menu">
+        <button id="menu-toggle">Toggle</button>
+        <div>
+            <a href="posts-all.html">Most Recent</a>
+            <a href="#">Popular</a>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </nav>
 
     <div class="nav-container">
         <div class="nav">
             <div class="logo">
-                <a href="https://www.themomproject.com" target="_blank">
+                <a href="index.html">
                     <img src="images/logo.png" alt="The Mom Project" />
                 </a>
             </div>
@@ -38,7 +57,6 @@
     <div class="wrapper">
 
         <div class="header">
-            <img src="images/header.jpg" alt="The Mom Project - Blog Website" />
             <div class="header-content">
                 <h1>The Mom Project</h1>
                 <h1><span>Blog Website</span></h1>
@@ -53,13 +71,9 @@
         <div class="content">
             <div class="post">
                 <img src="images/post-img-1.jpg" alt="Post #1" class="post-img" />
-                <div class="heart">
-                    <img src="images/heart.png" alt="heart" />
-                </div>
+                <div class="heart clicked"></div>
                 <div class="blurb-box">
-                    <div class="bookmark">
-                        <img src="images/bookmark.png" alt="bookmark" />
-                    </div>
+                    <div class="bookmark"></div>
                     <div class="title">
                         <a href="post-1.html"><h2>Title for Blog Entry #1</h2></a>
                     </div>
@@ -78,13 +92,9 @@
 
             <div class="post">
                 <img src="images/post-img-2.jpg" alt="Post #2" class="post-img" />
-                <div class="heart">
-                    <img src="images/heart.png" alt="heart" />
-                </div>
+                <div class="heart clicked"></div>
                 <div class="blurb-box">
-                    <div class="bookmark">
-                        <img src="images/bookmark.png" alt="bookmark" />
-                    </div>
+                    <div class="bookmark clicked"></div>
                     <div class="title">
                         <a href="post-2.html"><h2>Title for Blog Entry #2</h2></a>
                     </div>
@@ -103,13 +113,9 @@
 
             <div class="post">
                 <img src="images/post-img-3.jpg" alt="Post #3" class="post-img" />
-                <div class="heart">
-                    <img src="images/heart.png" alt="heart" />
-                </div>
+                <div class="heart"></div>
                 <div class="blurb-box">
-                    <div class="bookmark">
-                        <img src="images/bookmark.png" alt="bookmark" />
-                    </div>
+                    <div class="bookmark"></div>
                     <div class="title">
                         <a href="post-3.html"><h2>Title for Blog Entry #3</h2></a>
                     </div>
@@ -128,13 +134,9 @@
 
             <div class="post">
                 <img src="images/post-img-4.jpg" alt="Post #4" class="post-img" />
-                <div class="heart">
-                    <img src="images/heart.png" alt="heart" />
-                </div>
+                <div class="heart"></div>
                 <div class="blurb-box">
-                    <div class="bookmark">
-                        <img src="images/bookmark.png" alt="bookmark" />
-                    </div>
+                    <div class="bookmark"></div>
                     <div class="title">
                         <a href="post-4.html"><h2>Title for Blog Entry #4</h2></a>
                     </div>
@@ -153,13 +155,9 @@
 
             <div class="post">
                 <img src="images/post-img-5.jpg" alt="Post #5" class="post-img" />
-                <div class="heart">
-                    <img src="images/heart.png" alt="heart" />
-                </div>
+                <div class="heart"></div>
                 <div class="blurb-box">
-                    <div class="bookmark">
-                        <img src="images/bookmark.png" alt="bookmark" />
-                    </div>
+                    <div class="bookmark clicked"></div>
                     <div class="title">
                         <a href="post-5.html"><h2>Title for Blog Entry #5</h2></a>
                     </div>
@@ -178,13 +176,9 @@
 
             <div class="post">
                 <img src="images/post-img-6.jpg" alt="Post #6" class="post-img" />
-                <div class="heart">
-                    <img src="images/heart.png" alt="heart" />
-                </div>
+                <div class="heart clicked"></div>
                 <div class="blurb-box">
-                    <div class="bookmark">
-                        <img src="images/bookmark.png" alt="bookmark" />
-                    </div>
+                    <div class="bookmark"></div>
                     <div class="title">
                         <a href="post-6.html"><h2>Title for Blog Entry #6</h2></a>
                     </div>
@@ -203,13 +197,9 @@
 
             <div class="post">
                 <img src="images/post-img-7.jpg" alt="Post #7" class="post-img" />
-                <div class="heart">
-                    <img src="images/heart.png" alt="heart" />
-                </div>
+                <div class="heart"></div>
                 <div class="blurb-box">
-                    <div class="bookmark">
-                        <img src="images/bookmark.png" alt="bookmark" />
-                    </div>
+                    <div class="bookmark clicked"></div>
                     <div class="title">
                         <a href="post-7.html"><h2>Title for Blog Entry #7</h2></a>
                     </div>
@@ -228,13 +218,9 @@
 
             <div class="post">
                 <img src="images/post-img-8.jpg" alt="Post #8" class="post-img" />
-                <div class="heart">
-                    <img src="images/heart.png" alt="heart" />
-                </div>
+                <div class="heart"></div>
                 <div class="blurb-box">
-                    <div class="bookmark">
-                        <img src="images/bookmark.png" alt="bookmark" />
-                    </div>
+                    <div class="bookmark"></div>
                     <div class="title">
                         <a href="post-8.html"><h2>Title for Blog Entry #8</h2></a>
                     </div>
@@ -255,7 +241,7 @@
 
         <div class="footer">
             <div class="logo-footer">
-                <a href="https://www.themomproject.com" target="_blank">
+                <a href="index.html">
                     <img src="images/logo-footer.png" alt="The Mom Project" />
                 </a>
             </div>
